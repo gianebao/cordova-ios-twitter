@@ -6,7 +6,7 @@
     <name>cordova-ios-twitter</name>
     <description>cordova twitter plugin</description>
 
-    <js-module src="js/twitter-plugin.js" name="TwitterPlugin">
+    <js-module src="js/TwitterPlugin.js" name="TwitterPlugin">
         <clobbers target="window.plugins.twitter" />
     </js-module>
 
