@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.apache.cordova.twitter"
+      version="0.0.1">
+    <name>cordova-ios-twitter</name>
+    <description>cordova twitter plugin</description>
+
+    <js-module src="js/twitter-plugin.js" name="TwitterPlugin">
+        <clobbers target="window.plugins.twitter" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="TwitterPlugin">
+                <param name="ios-package" value="TwitterPlugin" />
+            </feature>
+        </config-file>
+        <header-file src="TwitterPlugin.h" />
+        <source-file src="TwitterPlugin.m" />
+    </platform>
+</plugin>
